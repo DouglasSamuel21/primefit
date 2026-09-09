@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Primefit</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <img class="logo" src="./img/logo02.png">
+            <form>
+                <input placeholder="Pesquise aqui...">
+            </form>
+
+            <div class="header-icons">
+
+                <div class="header-action account">
+                    <button class="action-btn">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                                    stroke="#EF6102" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M24 23C26.7614 23 29 20.7614 29 18C29 15.2386 26.7614 13 24 13C21.2386 13 19 15.2386 19 18C19 20.7614 21.2386 23 24 23Z"
+                                    fill="#EF6102" stroke="#EF6102" stroke-width="4" stroke-linejoin="round"></path>
+                                <path
+                                    d="M10.022 38.332C10.3657 33.1206 14.7016 29 20 29H28C33.2914 29 37.6229 33.1097 37.9767 38.3113"
+                                    stroke="#EF6102" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="action-menu">
+                        <p href="#">Entrar / Criar conta</p>
+                        <span href="#">Minha conta</span>
+                    </div>
+                </div>
+
+                <div class="header-action tracking">
+                    <button class="action-btn">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                                    stroke="#EF6102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                                    stroke="#EF6102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+
+                    <div class="action-menu">
+                        <p href="#">Onde esta meu pedido?</p>
+                        <span href="#">Rastrear Pedido</span>
+                    </div>
+                </div>
+
+                <div class="header-action cart">
+                    <button class="action-btn">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M7.2998 5H22L20 12H8.37675M21 16H9L7 3H4M4 8H2M5 11H2M6 14H2M10 20C10 20.5523 9.55228 21 9 21C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19C9.55228 19 10 19.4477 10 20ZM21 20C21 20.5523 20.5523 21 20 21C19.4477 21 19 20.5523 19 20C19 19.4477 19.4477 19 20 19C20.5523 19 21 19.4477 21 20Z"
+                                    stroke="#EF6102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="action-menu">
+                        <p href="#">Carrinho</p>
+                        <span href="#">Finalizar compra</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <div class="header-bottom" id="menuLateral">
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#brasileirao">Brasileirão</a>
+                <a href="Clubes">Clubes Internacionais</a>
+                <a href="selecoes">Seleções</a>
+                <a href="Lançamento">Infantil</a>
+                <a href="Chuteiras">Conjuto</a>
+                <a href="nba">NBA</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-img">
+                <img src="./img/imgHero.png">
+            </div>
+            <div class="hero-content">
+                <h1>VISTA SUA</h1>
+                <span>PERFORMANCE</span>
+                <button class="btn">Compre Agora > </button>
+            </div>
+        </section>
+
+        <section>
+            <div class="benefits">
+                <div class="benefit">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#EF6102">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M17 8h3l3 4.056V18h-2.035a3.5 3.5 0 0 1-6.93 0h-5.07a3.5 3.5 0 0 1-6.93 0H1V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2zm0 2v3h4v-.285L18.992 10H17z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <p>Entrega para todo Brasil</p>
+                </div>
+
+                <div class="benefit">
+                    <svg fill="#EF6102" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M11.917 11.71a2.046 2.046 0 0 1-1.454-.602l-2.1-2.1a.4.4 0 0 0-.551 0l-2.108 2.108a2.044 2.044 0 0 1-1.454.602h-.414l2.66 2.66c.83.83 2.177.83 3.007 0l2.667-2.668h-.253zM4.25 4.282c.55 0 1.066.214 1.454.602l2.108 2.108a.39.39 0 0 0 .552 0l2.1-2.1a2.044 2.044 0 0 1 1.453-.602h.253L9.503 1.623a2.127 2.127 0 0 0-3.007 0l-2.66 2.66h.414z">
+                            </path>
+                            <path
+                                d="m14.377 6.496-1.612-1.612a.307.307 0 0 1-.114.023h-.733c-.379 0-.75.154-1.017.422l-2.1 2.1a1.005 1.005 0 0 1-1.425 0L5.268 5.32a1.448 1.448 0 0 0-1.018-.422h-.9a.306.306 0 0 1-.109-.021L1.623 6.496c-.83.83-.83 2.177 0 3.008l1.618 1.618a.305.305 0 0 1 .108-.022h.901c.38 0 .75-.153 1.018-.421L7.375 8.57a1.034 1.034 0 0 1 1.426 0l2.1 2.1c.267.268.638.421 1.017.421h.733c.04 0 .079.01.114.024l1.612-1.612c.83-.83.83-2.178 0-3.008z">
+                            </path>
+                        </g>
+                    </svg>
+                    <p>10% de desconto no pix</p>
+                </div>
+
+                <div class="benefit">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M2 8.50488H22" stroke="#EF6102" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6 16.5049H8" stroke="#EF6102" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M10.5 16.5049H14.5" stroke="#EF6102" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M6.44 3.50488H17.55C21.11 3.50488 22 4.38488 22 7.89488V16.1049C22 19.6149 21.11 20.4949 17.56 20.4949H6.44C2.89 20.5049 2 19.6249 2 16.1149V7.89488C2 4.38488 2.89 3.50488 6.44 3.50488Z"
+                                stroke="#EF6102" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </g>
+                    </svg>
+                    <p>Em até 5x sem juros</p>
+                </div>
+
+                <div class="benefit">
+                    <svg fill="#EF6102" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 530.91 530.91" xml:space="preserve">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M73.762,530.91h383.381c19.076,0,34.541-15.465,34.541-34.541V216.611c0-19.076-15.465-34.542-34.541-34.542h-6.634 C448.856,81.402,366.506,0,265.452,0C164.399,0,82.048,81.402,80.402,182.07h-6.634c-19.076,0-34.541,15.465-34.541,34.542 v279.764C39.227,515.445,54.686,530.91,73.762,530.91z M299.008,358.32v83.85c0,16.896-13.702,30.6-30.6,30.6h-5.918 c-16.897,0-30.6-13.703-30.6-30.6v-83.85c-17.962-11.219-29.958-31.107-29.958-53.85c0-35.074,28.434-63.514,63.513-63.514 s63.513,28.434,63.513,63.514C328.966,327.213,316.971,347.102,299.008,358.32z M265.452,73.44 c60.551,0,109.891,48.464,111.537,108.63H153.915C155.562,121.911,204.901,73.44,265.452,73.44z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <p>Loja 100% segura</p>
+                </div>
+
+
+            </div>
+        </section>
+
+       
+        <section id="brasileirao" class="product">
+            <div class="info-product">
+                <h4>Brasileirão</h4>
+            </div>
+
+            <div class="product-container">
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/botafogo.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Botafogo</h5>
+                        <span>R$419,99</span>
+                        <p>R$250,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/palmeiras.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Palmeiras</h5>
+                        <span>R$479,99</span>
+                        <p>R$280,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/flamengo.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Flamengo</h5>
+                        <span>R$449,99</span>
+                        <p>R$260,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Corinthians.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Corinthians</h5>
+                        <span>R$359,99</span>
+                        <p>R$210,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/cruzeiro.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Cruzeiro</h5>
+                        <span>R$404,99</span>
+                        <p>R$270,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/fluminense.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Fluminense</h5>
+                        <span>R$499,99</span>
+                        <p>R$300,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="clubes" class="product product2">
+            <div class="info-product">
+                <h4>Clubes Internacionais</h4>
+            </div>
+
+            <div class="product-container">
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Barcelona.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Barcelona</h5>
+                        <span>R$489,99</span>
+                        <p>R$300,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/realMadri.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Real Madrid</h5>
+                        <span>R$499,99</span>
+                        <p>R$300,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Chelsea.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Chelsea</h5>
+                        <span>R$449,99</span>
+                        <p>R$310,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="./img/City.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Manchester City</h5>
+                        <span>R$399,99</span>
+                        <p>R$270,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="./img/PSG.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa PSG</h5>
+                        <span>R$449,99</span>
+                        <p>R$300,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="./img/Bayern.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Bayern Munich</h5>
+                        <span>R$399,99</span>
+                        <p>R$269,90</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="product">
+            <div class="info-product">
+                <h4>Seleções</h4>
+            </div>
+
+            <div class="product-container">
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Brasil.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Brasil</h5>
+                        <span>R$399,99</span>
+                        <p>R$280,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Argentina.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Argentina</h5>
+                        <span>R$399,99</span>
+                        <p>R$290,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/França.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa França</h5>
+                        <span>R$399,99</span>
+                        <p>R$290,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Espanha.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Espanha</h5>
+                        <span>R$399,99</span>
+                        <p>R$270,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/croacia.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Croácia</h5>
+                        <span>R$399,99</span>
+                        <p>R$270,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Bélgica.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa Bélgica</h5>
+                        <span>R$399,99</span>
+                        <p>R$290,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product product2">
+            <div class="info-product">
+                <h4>Infantil</h4>
+            </div>
+
+            <div class="product-container">
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Botafogo.infantil.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa infantil Botafogo</h5>
+                        <span>R$349,99</span>
+                        <p>R$230,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Bayern.infantil.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa infantil Bayern</h5>
+                        <span>R$349,99</span>
+                        <p>R$230,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Brasil.infantil.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa infantil Brasil</h5>
+                        <span>R$329,99</span>
+                        <p>R$220,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Palmeiras.infantil.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa infantil Palmeiras</h5>
+                        <span>R$349,99</span>
+                        <p>R$230,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Vasco.infantil.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa infantil Vasco</h5>
+                        <span>R$329,99</span>
+                        <p>R$220,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Unioted.infantil.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Camisa infantil United</h5>
+                        <span>R$349,99</span>
+                        <p>R$240,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="info-product">
+                <h4>Conjunto de Frio</h4>
+            </div>
+
+
+            <div class="product-container">
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Botafogo.cj.frio.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Agassalho Botafogo</h5>
+                        <span>R$699,99</span>
+                        <p>R$500,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Brasil.cj.frio.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Agassalho Brasil</h5>
+                        <span>R$749,99</span>
+                        <p>R$530,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/City.cj.frio.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Conjunto Man. City</h5>
+                        <span>R$799,99</span>
+                        <p>R$550,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Corinthians.cj.frio.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Agassalho Corinthians</h5>
+                        <span>R$749,99</span>
+                        <p>R$520,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Cruzeiro.cj.frio.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Agassalho Cruzeiro</h5>
+                        <span>R$699,99</span>
+                        <p>R$490,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/fluminense.cj.frio.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Agassalho Fluminense</h5>
+                        <span>R$699,99</span>
+                        <p>R$490,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="product product2">
+            <div class="info-product">
+                <h4>NBA</h4>
+            </div>
+
+            <div class="product-container">
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/GoldenState.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Regata Golden State</h5>
+                        <span>R$699,99</span>
+                        <p>R$470,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Lakers.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Regata Lakers</h5>
+                        <span>R$749,99</span>
+                        <p>R$500,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Miami.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Regata Miami</h5>
+                        <span>R$699,99</span>
+                        <p>R$460,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Bulls.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Regata Chicago Bulls</h5>
+                        <span>R$699,99</span>
+                        <p>R$460,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/Minnesota.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Regata Minnesota</h5>
+                        <span>R$699,99</span>
+                        <p>R$470,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/NewYork.png" alt="Camisa de time">
+                    </div>
+                    <div class="product-info">
+                        <h5>Regata NY Knicks</h5>
+                        <span>R$699,99</span>
+                        <p>R$470,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+        </section>
+
+        <section class="product">
+            <div class="info-product">
+                <h4>Chuteiras</h4>
+            </div>
+
+
+            <div class="product-container">
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/chuteitra.preta.png" alt="Camisa de time">
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Atlas chuteira</h5>
+                        <span>R$499,99</span>
+                        <p>R$280,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/chuteira.roxa.png" alt="Camisa de time">
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Atlas chuteira</h5>
+                        <span>R$499,99</span>
+                        <p>R$280,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/chuteira.cinza.png" alt="Camisa de time">
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Atlas chuteira</h5>
+                        <span>R$499,99</span>
+                        <p>R$280,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/chuteira.vermelha.png" alt="Camisa de time">
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Atlas chuteira</h5>
+                        <span>R$899,99</span>
+                        <p>R$480,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/chuteira.azul.png" alt="Camisa de time">
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Atlas chuteira</h5>
+                        <span>R$999,99</span>
+                        <p>R$390,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="product-img">
+                        <img src="./img/chuteira.verde.png" alt="Camisa de time">
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Atlas chuteira</h5>
+                        <span>R$699,99</span>
+                        <p>R$320,00</p>
+                        <p class="text">Em até 10x sem juros</p>
+                        <button>Comprar Agora</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="brands">
+            <div class="brands-title">
+                <h2>As melhores marcas</h2>
+                <span>Para sua Performance </span>
+            </div>
+
+            <div class="brands-container">
+                <svg fill="#fff" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="m 1.7414517,9.9869992 c -0.35187,-0.1687 -0.65089,-0.4752 -0.71578,-0.7337 -0.0760999,-0.3034 0.0231,-0.8892 0.22683,-1.3384 0.1922,-0.4239 0.73357,-1.273 1.07388,-1.6844 l 0.16019,-0.1936 -0.1292,0.3695 c -0.17969,0.5139 -0.17252,1.0639 0.0175,1.3459 0.28427,0.4218 0.84807,0.6471 1.35703,0.5421 0.37495,-0.077 4.01189,-1.0646 4.14367,-1.1248 0.0919,-0.042 -0.0151,-0.06 -0.37112,-0.063 l -0.5002,0 -0.005,-0.3388 c -0.003,-0.1864 -0.0244,-0.4632 -0.0484,-0.6151 l -0.0436,-0.2761 -0.22267,0.615 -0.22268,0.615 -0.37434,0 c -0.20589,0 -0.37434,-0.025 -0.37434,-0.055 0,-0.03 0.20619,-0.6038 0.45821,-1.2747 0.25201,-0.6708 0.51549,-1.3722 0.58551,-1.5586 l 0.12732,-0.3388 0.38261,0 c 0.21044,0 0.38262,0.01 0.38262,0.02 0,0.011 -0.0724,0.2049 -0.16094,0.4307 -0.0885,0.2259 -0.15326,0.4184 -0.14387,0.4278 0.009,0.01 0.17621,-0.1834 0.37071,-0.4284 l 0.35363,-0.4455 1.1848,0 c 1.0579293,0 1.1805793,0.01 1.1453493,0.1005 -0.0217,0.057 -0.057,0.1727 -0.0784,0.2581 -0.036,0.1435 -0.0701,0.1554 -0.4428793,0.1554 l -0.40388,0 -0.12906,0.3389 -0.12906,0.3388 0.34631,0.019 c 0.19047,0.011 0.34631,0.048 0.34631,0.083 0,0.035 -0.0414,0.1626 -0.0921,0.2839 -0.088,0.2107 -0.10858,0.2213 -0.46435,0.2399 l -0.37223,0.02 -0.1488,0.3849 c -0.0819,0.2117 -0.14881,0.3933 -0.14881,0.4034 0,0.01 0.2024,0.018 0.44977,0.018 0.37328,0 0.44345,0.017 0.41262,0.097 -0.0204,0.053 -0.008,0.097 0.0281,0.097 0.0359,0 0.8135193,-0.2033 1.7280293,-0.4518 1.56793,-0.426 2.00125,-0.5135 1.50299,-0.3034 -0.1192,0.05 -2.13365,0.9197 -4.4765293,1.9321 -2.34289,1.0124 -4.47763,1.9198 -4.74387,2.0164 -0.31654,0.1148998 -0.66276,0.1859998 -1.00041,0.2053998 -0.44994,0.026 -0.55817,0.01 -0.84169,-0.1262998 z m 6.61127,-4.6535 c 0.25232,-0.6709 0.45742,-1.2372 0.45578,-1.2586 -0.002,-0.021 -0.24801,0.2226 -0.54749,0.542 l -0.54451,0.5809 -3.9e-4,0.5486 c -5.2e-4,0.6754 0.0612,1.115 0.13065,0.9315 0.026,-0.069 0.25366,-0.6736 0.50598,-1.3444 z m -5.60525,1.4325 c 0.0715,-0.188 0.34265,-0.9082 0.60255,-1.6004 l 0.47254,-1.2586 0.42149,-0.019 0.42149,-0.019 -0.0227,0.277 c -0.0545,0.6647 -0.0775,1.0839 -0.0595,1.0839 0.0107,0 0.13135,-0.3048 0.26819,-0.6773 l 0.2488,-0.6773 0.37112,-7e-4 c 0.20411,0 0.37111,0.024 0.37111,0.055 0,0.03 -0.20619,0.6039 -0.4582,1.2747 -0.25202,0.6709 -0.5155,1.3722 -0.58552,1.5586 l -0.12731,0.3389 -0.42185,0 -0.42185,0 0.0384,-0.6616 c 0.0211,-0.3639 0.024,-0.6325 0.007,-0.597 -0.0175,0.035 -0.12882,0.3259 -0.24727,0.6454 l -0.21537,0.5809 -0.39629,0.019 -0.39628,0.019 0.13,-0.3419 z m 2.06239,0.2809 c 0,-0.03 0.20619,-0.6039 0.4582,-1.2748 0.25202,-0.6708 0.5155,-1.3722 0.58552,-1.5585 l 0.12731,-0.3389 0.388,0 c 0.2134,0 0.37831,0.025 0.36648,0.056 -0.0118,0.031 -0.28291,0.7566 -0.6024,1.6129 l -0.58088,1.5568 -0.37112,6e-4 c -0.20411,7e-4 -0.37111,-0.024 -0.37111,-0.054 z">
+                        </path>
+                    </g>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M1.3294 19L0.731323 17.9641L5.06145 15.4641L7.1029 19H1.3294Z" fill="#fff"></path>
+                        <path d="M15.1858 19H9.4123L5.7935 12.7321L10.1236 10.2321L15.1858 19Z" fill="#fff"></path>
+                        <path d="M23.2687 19H17.4952L10.8557 7.5L15.1858 5L23.2687 19Z" fill="#fff"></path>
+                    </g>
+                </svg>
+                <svg fill="#fff" viewBox="35.433 -191.049 889.299 889.299" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="m512.857 36.99c-2.898.447-5.684 11.118-11.285 16.677-4.096 4.012-9.209 3.761-11.925 8.721-1.031 1.853-.697 5.016-1.867 8.053-2.285 6.074-10.337 6.617-10.337 13.235-.028 7.147 6.715 8.512 12.552 13.583 4.556 4.082 5.002 6.896 10.518 8.874 4.71 1.603 11.717-3.636 18.028-1.755 5.183 1.547 10.142 2.661 11.313 7.983 1.03 4.904-.07 12.51-6.353 11.633-2.118-.237-11.299-3.33-22.583-2.132-13.612 1.547-29.146 5.99-30.664 21.163-.836 8.484 9.654 18.487 19.783 16.453 7.007-1.38 3.692-9.64 7.509-13.653 5.001-5.14 33.338 17.944 59.683 17.944 11.09 0 19.337-2.8 27.53-11.382.765-.655 1.699-2.062 2.883-2.146 1.115.084 3.065 1.184 3.706 1.658 21.218 17.052 37.253 51.255 115.229 51.659 10.964.055 23.46 5.294 33.658 14.6 9.098 8.415 14.42 21.496 19.588 34.773 7.802 19.923 21.79 39.302 42.993 60.868 1.157 1.156 18.613 14.726 20.006 15.743.223.139 1.505 3.204 1.06 4.917-.516 12.929-2.397 50.53 25.633 52.23 6.855.348 5.057-4.472 5.057-7.788-.013-6.548-1.212-13.054 2.244-19.755 4.722-9.222-10.017-13.472-9.585-33.408.306-14.865-12.177-12.33-18.516-23.656-3.65-6.562-6.896-10.044-6.659-18.07 1.421-45.165-9.613-74.84-15.116-82.126-4.29-5.503-7.843-7.69-3.915-10.24 23.392-15.45 28.7-29.828 28.7-29.828 12.44-29.242 23.628-55.95 39.05-67.707 3.107-2.425 11.076-8.373 15.966-10.714 14.391-6.785 21.97-10.894 26.15-14.963 6.617-6.45 11.841-19.894 5.502-28.044-7.885-10.059-21.524-2.076-27.542 1.49-43.007 25.524-49.346 70.55-64.24 96.408-11.883 20.66-31.206 35.832-48.481 37.072-12.957.961-26.916-1.658-40.82-7.76-33.812-14.823-52.314-33.965-56.674-37.35-9.084-7.008-79.606-76.235-136.74-79.063 0 0-7.09-14.196-8.874-14.433-4.18-.53-8.456 8.484-11.521 9.53-2.884.96-7.732-9.767-10.644-9.293m-251.522 413.171c-5.378-.126-9.947-4.542-9.947-10.003l.014-178.214h-58.736v196.45c0 9.627 7.801 17.485 17.372 17.485h102.663c9.64 0 17.345-7.858 17.345-17.485v-196.45h-58.68l-.056 178.214c0 5.461-4.57 9.877-9.975 10.003m196.659-188.217h-88.898c-10.518 0-19.086 8.554-19.086 19.184v194.75h58.79v-178.644c.042-5.475 4.472-9.808 9.934-9.808 5.489 0 9.891 4.235 10.016 9.655v178.798h58.555v-178.8c.07-5.419 4.472-9.654 9.947-9.654 5.434 0 9.92 4.333 9.962 9.808v178.646h58.791v-194.751c0-10.63-8.582-19.184-19.1-19.184zm-343.931 35.665c.042-5.949-4.806-10.184-9.947-10.184h-9.975v108.207h9.975c5.183 0 9.99-4.124 9.947-10.044zm39.413 124.507h-59.335v53.763h-58.708v-213.935h118.42c10.601 0 18.876 8.61 18.876 19.268v121.637c0 10.672-8.595 19.267-19.253 19.267m613.996 5.921c-11.8 0-21.706 10.198-21.706 22.556 0 12.399 9.906 22.513 22.082 22.513 12.079 0 21.859-10.114 21.859-22.513 0-12.386-9.78-22.556-21.86-22.556zm26.442 22.486c0 14.53-11.647 26.345-26.066 26.345-14.573 0-26.275-11.73-26.275-26.345 0-14.336 11.702-26.317 25.843-26.317 14.851 0 26.498 11.62 26.498 26.317">
+                        </path>
+                        <path
+                            d="m765.131 448.852c4.082 0 6.228-1.449 6.228-4.346 0-2.578-2.076-3.901-6.047-3.901h-1.17v8.247zm15.033 16.913h-7.008l-9.014-11.995v11.995h-5.726v-30.329h6.019c8.178 0 12.524 3.093 12.524 9 0 3.942-2.563 7.44-6.144 8.484l-.418.154zm-115.591-70.09v-98.51c-.14-5.448-4.528-9.627-10.003-9.627-5.42 0-9.906 4.346-9.947 9.78v98.357zm0 80.205v-53.707h-19.95v53.707h-58.68v-194.751c0-10.63 8.567-19.184 19.086-19.184h99.137c10.547 0 19.115 8.554 19.115 19.184v194.75z">
+                        </path>
+                    </g>
+                </svg>
+                <svg fill="#fff" viewBox="0 -29.98 240 240" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M238.553 22.362s-6.882-5.327-29.168-13.512C189.83 1.653 174.893 0 174.893 0l.074 42.679c0 18.039-20.385 37.194-55.199 37.194h-.996c-34.81 0-55.188-19.155-55.188-37.194L63.652 0S48.729 1.652 29.166 8.85C6.881 17.035 0 22.362 0 22.362c1.652 34.229 54.826 62.43 119.263 62.445h.015c64.441-.015 117.628-28.216 119.275-62.445">
+                        </path>
+                        <path
+                            d="M238.582 118.203s-6.881 5.312-29.167 13.504c-19.569 7.198-34.493 8.843-34.493 8.843l.075-42.672c0-18.035-20.386-37.183-55.199-37.183l-.49-.015h-.015l-.483.015c-34.817 0-55.195 19.148-55.195 37.183l.076 42.672s-14.931-1.645-34.493-8.843C6.919 123.515.024 118.203.024 118.203c1.652-34.226 54.84-62.427 119.285-62.449 64.44.022 117.629 28.223 119.273 62.449M11.611 179.946c-5.432 0-5.53-4.135-5.53-5.733v-7.528c0-.469-.03-1.072.936-1.072h2.799c.92 0 .868.635.868 1.072v7.528c0 .543.091 1.978 2.067 1.978h4.708c1.939 0 2.052-1.435 2.052-1.978v-7.528c0-.438-.062-1.072.853-1.072H23.2c1.02 0 .928.635.928 1.072v7.528c0 1.601-.106 5.733-5.545 5.733M37.632 179.026c-1.916-2.58-4.655-5.824-7.446-9.266v9.174c0 .407.098 1.012-.86 1.012h-2.618c-.943 0-.837-.604-.837-1.012v-12.268c0-.422-.038-1.057.837-1.057h5.107c1.441 0 3.501 2.897 4.844 4.828 1.049 1.449 2.965 3.651 4.255 5.312v-9.084c0-.422-.053-1.057.898-1.057h2.844c.905 0 .854.635.854 1.057v13.277h-5.243c-1.126.004-1.609.08-2.635-.916M47.244 179.946v-14.319h12.652c.77 0 5.968-.104 5.968 5.356 0 5.568.596 8.963-5.862 8.963h-6.82l-1.471-2.987v2.987m7.513-3.772c2.301 0 2.127-2.202 2.127-3.214 0-3.38-.951-3.518-2.467-3.518h-7.22v6.73l7.56.002zM70.813 165.718h11.664c.981 0 .853.646.853 1.84 0 1.116.151 1.75-.853 1.75h-9.219c-.242 0-1.086-.119-1.086.74 0 .875-.159 1.223.762 1.223h8.148l1.313 2.609c.188.362.166.68-.551.68h-8.436l-1.305-2.551v3.758c0 .875.777.709 1.003.709h9.574c.951 0 .868.664.868 1.75 0 1.162.083 1.812-.868 1.812H70.563c-1.011 0-2.98-.315-2.98-3.472v-7.891c0-.83.43-2.957 3.23-2.957M86.475 165.626h12.758c1.712 0 4.202-.016 4.202 4.604 0 3.018-.641 3.168-2.015 4.104 2.301.393 1.992 3.334 1.992 4.857 0 .771-.279.754-.506.754h-3.742c-.785 0-.596-1.236-.596-1.885 0-1.75-.981-1.676-1.366-1.676h-5.507c-.528-.921-1.554-2.973-1.554-2.973v5.945l-.702.588h-3.765l-.377-.469v-12.613c.001-.888.627-1.236 1.178-1.236m10.162 3.788h-5.681c-.951 0-.905.315-.905.604v2.563h5.847c2.837 0 2.837-.709 2.837-1.448-.001-1.478-.121-1.719-2.098-1.719M125.404 165.718c.936 0 1.848.422 2.832 2.338.664 1.373 5.297 9.748 6.277 11.498v.482h-4.828l-1.39-2.52h-5.872l-1.27-2.883c-.361.588-2.3 4.27-2.964 5.401h-4.843v-.315c.988-1.857 7.733-14.004 7.733-14.004m2.817 3.972l-2.369 4.299.219.213h4.391l.219-.213-2.24-4.314-.22.015M137.576 165.626h12.766c1.705 0 4.195-.016 4.195 4.604 0 3.018-.635 3.168-2.008 4.104 2.311.393 1.992 3.334 1.992 4.857 0 .771-.287.754-.514.754h-3.742c-.783 0-.588-1.236-.588-1.885 0-1.75-.98-1.676-1.357-1.676h-5.521c-.529-.921-1.557-2.973-1.557-2.973v5.945l-.691.588h-3.773l-.377-.469v-12.613c-.001-.888.632-1.236 1.175-1.236m10.171 3.788h-5.688c-.951 0-.904.315-.904.604v2.563h5.854c2.821 0 2.821-.709 2.821-1.448-.001-1.478-.105-1.719-2.083-1.719M165.688 179.946c-.949-1.78-3.59-6.699-5.371-9.928v8.933c0 .377.061.995-.859.995h-2.58c-.966 0-.891-.618-.891-.995v-12.269c0-.438-.061-1.057.891-1.057h4.467c.664 0 1.613-.15 2.67 1.977.801 1.705 2.489 5.252 3.668 7.123 1.176-1.871 2.912-5.418 3.711-7.123 1.041-2.127 1.961-1.977 2.717-1.977h4.451c.904 0 .799.619.799 1.057v12.269c0 .377.137.995-.799.995h-2.611c-.95 0-.875-.618-.875-.995v-8.933c-1.811 3.229-4.422 8.146-5.416 9.928M185.092 179.976c-4.225 0-4.043-4.525-4.043-7.482 0-2.688-.303-6.896 4.993-6.941h9.416c5.312 0 4.964 4.271 4.964 6.941 0 2.957.213 7.482-4.089 7.482m-2.731-3.682c2.144 0 2.067-2.218 2.067-3.695 0-1.344.317-3.427-2.476-3.427h-4.736c-2.775 0-2.445 2.083-2.445 3.427 0 1.479-.136 3.695 2.008 3.695h5.582zM207.499 179.946c-5.417 0-5.522-4.135-5.522-5.733v-7.528c0-.469-.029-1.072.937-1.072h2.808c.92 0 .858.635.858 1.072v7.528c0 .543.091 1.978 2.067 1.978h4.707c1.947 0 2.053-1.435 2.053-1.978v-7.528c0-.438-.045-1.072.859-1.072h2.821c1.026 0 .937.635.937 1.072v7.528c0 1.601-.092 5.733-5.553 5.733M223.04 165.626h12.767c1.705 0 4.193-.016 4.193 4.604 0 3.018-.648 3.168-2.021 4.104 2.31.393 2.008 3.334 2.008 4.857 0 .771-.287.754-.514.754h-3.742c-.77 0-.588-1.236-.588-1.885 0-1.75-.996-1.676-1.373-1.676h-5.508c-.527-.921-1.555-2.973-1.555-2.973v5.945l-.709.588h-3.758l-.377-.469v-12.613c0-.888.634-1.236 1.177-1.236m10.155 3.788h-5.674c-.951 0-.906.315-.906.604v2.563h5.855c2.821 0 2.821-.709 2.821-1.448.002-1.478-.119-1.719-2.096-1.719">
+                        </path>
+                    </g>
+                </svg>
+
+                <img class="img-svg" src="./img/boleto.svg">
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-img">
+                    <img src="img/logo02.png">
+                    <p>Na Primefit você encontra tudo para o seu desempenho. Camisas de time, chuteiras, acessórios e
+                        moda esportiva com qualidade. estilo e o melhor preço!</p>
+                </div>
+
+                <div class="institution">
+                    <h1>institucional</h1>
+                    <div class="institution-links">
+                        <a>Quem somos</a>
+                        <a>Politica de Privacidade</a>
+                        <a>Trocas e Devoluções</a>
+                        <a>Termos de Uso</a>
+                    </div>
+                </div>
+
+                <div class="help">
+                    <h1>Ajuda</h1>
+                    <div class="help-links">
+                        <a>Central de Atendimento</a>
+                        <a>Perguntas Frequentes</a>
+                        <a>Formas de Pagamento</a>
+                        <a>Envios e Entregas</a>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <h1>Atendimento</h1>
+                    <div class="service-links">
+                        <div class="ctt">
+                            <img src="./img/whatsapp-color-svgrepo-com.svg">
+                            <a>(21) 97159-0000</a>
+                        </div>
+
+                        <div class="ctt">
+                            <img src="./img/email-1573-svgrepo-com.svg">
+                            <a>contato@primefit.com</a>
+                        </div>
+
+                        <div class="ctt">
+                            <img src="./img/clock-circle-svgrepo-com.svg">
+                            <a>Segunda a Sexta: 9h às 18h</a>
+                            <a>Sábado: 10h às 14h</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="payments">
+                    <h1>Formas de Pagamento</h1>
+                    <div class="payments-links">
+                        <div class="service-img">
+                            <img src="./img/visa-svgrepo-com.svg">
+                        </div>
+
+                        <div class="service-img">
+                            <img src="./img/mastercard-fill-svgrepo-com.svg">
+                        </div>
+
+                        <div class="service-img">
+                            <img src="./img/elo-svgrepo-com.svg">
+                        </div>
+
+                        <div class="service-img">
+                            <img src="./img/pix-svgrepo-com.svg">
+                        </div>
+
+                        <div class="service-img">
+                            <img src="./img/boleto.02.png">
+                        </div>
+
+
+                        <div class="service-img">
+                            <img src="./img/vrpg.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
